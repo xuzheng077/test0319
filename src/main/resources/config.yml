@@ -1,0 +1,133 @@
+#on:
+#  port: 8080
+#  address: 0.0.0.0
+#
+#admin:
+#  port: ${on.port}
+#  address: ${on.address}
+#
+#app:
+#  contextPath: ''
+#  home: /
+#
+#gui:
+#  search: false
+#  navbar: true
+#  fluid: false
+#  cdn: auto
+#  menu: {}
+#
+#main-zone: {}
+#
+#users:
+#  admin:
+#    roles: administrator
+#
+#jobs:
+#  executor:
+#    threads: 512
+#  scheduler:
+#    threads: 128
+#
+##jdbc:
+##  host: mysql.default.svc.cluster.local
+##  driver: com.mysql.cj.jdbc.Driver
+##  username: root
+##  password: password
+##  url: jdbc:mysql://${jdbc.host}:3306/twitter_db?characterEncoding=utf8&useSSL=true&serverTimezone=UTC
+##  options: logger=Slf4JLogger
+##  poolProvider: hikari
+#
+##hibernate:
+##  dialect: org.hibernate.dialect.MySQL5Dialect
+#
+#hikari:
+#  debug: false
+#  initialPoolSize: 100
+#  minPoolSize: 100
+#  maxPoolSize: 500
+#  acquireIncrement: 10
+#  maxStatementsPerConnection: 20
+#  idleConnectionTestPeriod: 300
+#  maxLifetime: 2000000
+#
+#c3p0:
+#  debug: false
+#  initialPoolSize: 100
+#  minPoolSize: 100
+#  maxPoolSize: 500
+#  acquireIncrement: 10
+#  maxStatementsPerConnection: 20
+#  idleConnectionTestPeriod: 300
+#
+#oauth:
+#  google:
+#    scope: profile,email
+#    clientId: YOUR_GOOGLE_CLIENT_ID_HERE
+#    clientSecret: YOUR_GOOGLE_CLIENT_SECRET_HERE
+#
+#  github:
+#    scope: user:email
+#    clientId: YOUR_GITHUB_CLIENT_ID_HERE
+#    clientSecret: YOUR_GITHUB_CLIENT_SECRET_HERE
+#
+#  facebook:
+#    scope: public_profile,email
+#    clientId: YOUR_FACEBOOK_CLIENT_ID_HERE
+#    clientSecret: YOUR_FACEBOOK_CLIENT_SECRET_HERE
+#
+#  linkedin:
+#    scope: r_basicprofile,r_emailaddress
+#    clientId: YOUR_LINKEDIN_CLIENT_ID_HERE
+#    clientSecret: YOUR_LINKEDIN_CLIENT_SECRET_HERE
+#
+#net:
+#  address: 0.0.0.0
+#  port: 8080
+#  # workers: ${system.cpus}
+#  bufSizeKB: 1024
+#  noDelay: false
+#  maxPipeline: 0
+#  syncBufs: true
+#  blockingAccept: false
+#
+#http:
+#  timeout: 30000
+#  timeoutResolution: 5000
+#  maxPipeline: 10
+#  serverName: Rapidoid
+#
+#  mandatoryHeaders:
+#    connection: true
+#    date: true
+#    server: true
+#    contentType: true
+#
+#reverse-proxy:
+#  timeout: 10000
+#  retryDelay: 300
+#  maxConnections: 100
+#  maxConnectionsPerRoute: 100
+#  reuseConnections: true
+#  setHeaders:
+#    X-Forwarded-For: true
+#    X-Client-IP: false
+#    X-Real-IP: false
+#    X-Username: false
+#    X-Roles: false
+#
+#token:
+#  ttl: 0 # unlimited
+#
+#log:
+#  level: info
+## fancy: auto
+#
+#tls:
+#  selfSigned: true
+#  enabled: false
+#  keystore: ''
+#  keystorePassword: ''
+#  keyManagerPassword: ''
+#  truststore: ''
+#  truststorePassword: ''
